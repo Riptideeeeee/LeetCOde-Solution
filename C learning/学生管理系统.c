@@ -125,10 +125,6 @@ void save_to_file(struct Student *head){
 	printf("±£´æ³É¹¦!\n");
 }
 struct Student* load_from_file(struct Student* head){
-	if (fp == NULL) {
-    printf("ÎÄ¼þ´ò¿ªÊ§°Ü£¡\n");
-    return head;
-	}
 	FILE *fp=fopen("stu.txt","r");
 	int id;
     char name[20];
