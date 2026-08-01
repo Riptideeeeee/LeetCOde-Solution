@@ -125,10 +125,6 @@ void save_to_file(struct Student *head){
 	printf("保存成功!\n");
 }
 struct Student* load_from_file(struct Student* head){
-	if (fp == NULL) {
-    printf("文件打开失败！\n");
-    return head;
-	}
 	FILE *fp=fopen("stu.txt","r");
 	int id;
     char name[20];
